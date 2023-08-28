@@ -39,5 +39,8 @@ CHIP CPU {
         pc[15];          // address of next instruction
 
     PARTS:
-    // Put your code here:
+    ALU(x=, y=, zx=instruction[6], nx=instruction[7], zy=instruction[8], ny=instruction[9], f=instruction[10], no=instruction[11], out=yee);
+    Register(in=, load=, out=);
+    Register(in=, load=, out=);
+    PC(in=, load=, inc=, reset=, out=);
 }
