@@ -14,8 +14,6 @@
 M=0
 @R0
 D=M
-@R3
-M=D
 (LOOP)
 	// D = condition
 	@R1
@@ -23,7 +21,7 @@ M=D
 	@LOOP_END
 	D;JEQ
 	
-	@R3
+	@R0
 	D=M
 	@R2
 	M=M+D
